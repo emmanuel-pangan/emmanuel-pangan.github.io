@@ -1,0 +1,13 @@
+<div>
+  <div style="display: flex; justify-content: space-between; flex-direction: row; align-items: flex-start;">
+    <p>Projects</p>
+    <p class="lead">Sort</p>
+  </div>
+  <ul>
+    @for (p of projects; track $index) {
+    <li>
+      <app-card [project]="p"></app-card>
+    </li>
+    }
+  </ul>
+</div>

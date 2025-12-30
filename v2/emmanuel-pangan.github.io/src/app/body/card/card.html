@@ -1,0 +1,49 @@
+<div class="card rounded-0 my-5">
+  <div class="card-body">
+    <h5 class="card-title">{{ project.title }}</h5>
+    <p class="card-text lead">
+      {{ project.description }}
+    </p>
+    <div class="game-buttons">
+      <a
+        class="btn btn-secondary"
+        data-toggle="collapse"
+        [attr.href]="'#collapse' + project.id"
+        [attr.aria-controls]="'collapse' + project.id"
+        >View screenshots</a
+      >
+      <a class="btn btn-dark" [attr.href]="project.url" target="_blank"
+        >Play Game</a
+      >
+    </div>
+  </div>
+  <a
+    data-toggle="tooltip"
+    title="Visit page"
+    href="https://emmanuel-pangan.itch.io/yggdrasil"
+    target="_blank"
+  >
+    <img
+      class="card-img-bottom rounded-0"
+      [alt]="project.title"
+      [src]="project.banner"
+    />
+  </a>
+  <div class="collapse" [attr.id]="'collapse' + project.id">
+    <div class="card card-body">
+      <!-- SCREENSHOTS -->
+      <div class="screenshots">
+        @for (s of project.screenshots; track $index) {
+        <a target="_blank" [href]="s">
+          <img
+            class="my-1"
+            style="height: 128px; width: auto"
+            [alt]="project.title"
+            [src]="s"
+          />
+        </a>
+        }
+      </div>
+    </div>
+  </div>
+</div>

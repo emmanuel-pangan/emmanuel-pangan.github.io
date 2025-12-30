@@ -1,0 +1,52 @@
+header,
+h1,
+p,
+ul,
+li,
+a {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1rem;
+}
+
+p, ul {
+    margin-top: 1rem;
+}
+
+li {
+    display: inline;
+}
+
+header {
+    background-color: yellow;
+}
+
+header {
+    padding-block: 2.5rem;
+    padding-inline: 2rem;
+}
+
+@media (max-width: 768px) {
+    header {
+        padding-block: 2rem;
+        padding-inline: 0.5rem;
+    }
+}
