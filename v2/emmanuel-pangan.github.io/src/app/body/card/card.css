@@ -1,17 +1,23 @@
 div.screenshots {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: fit-content;
-  column-gap: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    column-gap: 1rem;
 }
 
 div.card.card-body {
-  overflow-x: scroll;
+    overflow-x: scroll;
 }
 
 div.game-buttons {
-  display: flex;
-  justify-content: flex-end;
-  gap: 1rem
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem
+}
+
+div.card-contents {
+    display: flex;
+    justify-content: start;
+    align-items: start"
 }

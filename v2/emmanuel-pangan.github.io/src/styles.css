@@ -11,6 +11,33 @@ a {
     text-decoration: none;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li,
+a,
+button,
+label,
+select,
+option
+ {
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 300;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+a {
+    font-weight: 500;
+}
+
+
 /* h1 {
     font-size : clamp(2rem, 10vw, 5rem);
 }

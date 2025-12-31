@@ -1,7 +1,19 @@
 <div class="card rounded-0 my-5">
   <div class="card-body">
-    <h5 class="card-title">{{ project.title }}</h5>
-    <p class="card-text lead">
+    <div class="card-contents">
+      <h5 class="card-title">
+        <a
+          class="text-dark"
+          data-toggle="tooltip"
+          title="Visit page"
+          target="_blank"
+          [href]="project.url"
+        >
+          {{ project.title }}
+        </a>
+      </h5>
+    </div>
+    <p>
       {{ project.description }}
     </p>
     <div class="game-buttons">
@@ -12,7 +24,12 @@
         [attr.aria-controls]="'collapse' + project.id"
         >View screenshots</a
       >
-      <a class="btn btn-dark" [attr.href]="project.url" target="_blank"
+      <a
+        class="btn btn-dark"
+        [attr.href]="project.url"
+        data-toggle="tooltip"
+        title="Visit page"
+        target="_blank"
         >Play Game</a
       >
     </div>
@@ -23,24 +40,15 @@
     href="https://emmanuel-pangan.itch.io/yggdrasil"
     target="_blank"
   >
-    <img
-      class="card-img-bottom rounded-0"
-      [alt]="project.title"
-      [src]="project.banner"
-    />
+    <img class="card-img-bottom rounded-0" [alt]="project.title" [src]="project.banner" />
   </a>
   <div class="collapse" [attr.id]="'collapse' + project.id">
     <div class="card card-body">
       <!-- SCREENSHOTS -->
       <div class="screenshots">
         @for (s of project.screenshots; track $index) {
-        <a target="_blank" [href]="s">
-          <img
-            class="my-1"
-            style="height: 128px; width: auto"
-            [alt]="project.title"
-            [src]="s"
-          />
+        <a data-toggle="tooltip" title="View screenshot" target="_blank" [href]="s">
+          <img class="my-1" style="height: 128px; width: auto" [alt]="project.title" [src]="s" />
         </a>
         }
       </div>
