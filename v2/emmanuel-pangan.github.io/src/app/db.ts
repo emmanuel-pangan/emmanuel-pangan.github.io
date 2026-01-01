@@ -5,7 +5,7 @@ export interface Project {
   description: string;
   banner: string;
   screenshots: string[] | null;
-  created_date: string;
+  publishedDate: string;
 }
 
 export const PROJECTS = [
@@ -21,7 +21,7 @@ export const PROJECTS = [
       'https://img.itch.zone/aW1hZ2UvNTM1NDEwLzcwMDk3OTQucG5n/original/a5oNJV.png',
       'https://img.itch.zone/aW1hZ2UvNTM1NDEwLzcwMDk3OTMucG5n/original/DaGKUt.png',
     ],
-    created_date: '',
+    publishedDate: 'December 15, 2019',
   },
 
   {
@@ -36,7 +36,7 @@ export const PROJECTS = [
       'https://img.itch.zone/aW1hZ2UvNzQ4NzUxLzY3MzQyMjQucG5n/original/bAz6SH.png',
       'https://img.itch.zone/aW1hZ2UvNzQ4NzUxLzY3MjYwNzAucG5n/original/JW6Hmv.png',
     ],
-    created_date: '',
+    publishedDate: 'November 10, 2020',
   },
 
   {
@@ -51,7 +51,7 @@ export const PROJECTS = [
       'https://img.itch.zone/aW1hZ2UvMTI1MTc2NS85MzkyMjk2LnBuZw==/original/wmYrRx.png',
       'https://img.itch.zone/aW1hZ2UvMTI1MTc2NS85Mzk3NzkyLnBuZw==/original/RZkmkm.png',
     ],
-    created_date: '',
+    publishedDate: 'November 06, 2021',
   },
 
   {
@@ -67,6 +67,6 @@ export const PROJECTS = [
       'https://img.itch.zone/aW1hZ2UvMzA4MjcyOS8yMjczNTA0OC5wbmc=/original/a5BGWM.png',
       'https://img.itch.zone/aW1hZ2UvMzA4MjcyOS8yMjczNTA0OS5wbmc=/original/WtMeFn.png',
     ],
-    created_date: '',
+    publishedDate: 'August 15, 2025',
   },
 ];

@@ -1,14 +1,22 @@
 <main>
-  <div >
-    <div style="margin-top: 2rem; display: grid; grid-template-columns: 1fr auto; gap: 1rem">
-      <h3 class="text-dark">Projects</h3>
-      <div style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap">
-        <select class="form-control w-auto" id="engine" style="margin-bottom: 0;">
-          <option value="" disabled selected hidden>Sort</option>
-          <option>Alphabetical</option>
-          <option>Published Date</option>
-        </select>
-      </div>
+  <div
+    style="
+      margin-bottom: 1rem;
+      margin-top: 3rem;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 1rem;
+    "
+  >
+    <h3 class="text-dark">Projects</h3>
+    <div style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap">
+      <select class="form-control w-auto" id="engine" style="margin-bottom: 0" #sortMethod (change)="sortProjectsBy(sortMethod.value)">
+        <option value="">Sort by Default</option>
+        <option value="Alphabetical (Ascending)">Alphabetical (Ascending)</option>
+        <option value="Alphabetical (Descending)">Alphabetical (Descending)</option>
+        <option value="Published Date (Ascending)">Published Date (Ascending)</option>
+        <option value="Published Date (Descending)">Published Date (Descending)</option>
+      </select>
     </div>
   </div>
   <ul>
