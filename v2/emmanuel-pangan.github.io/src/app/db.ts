@@ -70,3 +70,21 @@ export const PROJECTS = [
     publishedDate: 'August 15, 2025',
   },
 ];
+
+export interface About {
+  name: string;
+  description: string;
+  aboutMe: string;
+  jpName: string;
+  jpDescription: string;
+  jpAboutMe: string;
+}
+
+export const ABOUT: About = {
+  name: "Emmanuel Pangan",
+  description: "Indie Game Developer from the Philippines.",
+  aboutMe: "I'm a Software Developer with expertise in C#, ASP.Net, and Angular by day. And I dive into Unity3D and game development by night. I'm eager to delve more into the world of Azure and expand my cloud computing skills. I'm also passionate in learning Japanese with my level currently at N4, and the journey has been incredibly rewarding so far! And lastly, you could actually switch to Japanese with this button: 日本語",
+  jpName: "パンガン　エマニュエル",
+  jpDescription: "フィリピンからインディゲールクリエイター。",
+  jpAboutMe: "",
+}

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ABOUT, About } from '../db';
 
 @Component({
   selector: 'app-header',
@@ -7,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './header.css',
 })
 export class Header {
-
+  protected about: About = ABOUT;
 }
