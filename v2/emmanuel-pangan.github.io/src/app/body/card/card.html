@@ -18,14 +18,14 @@
     </p>
     <div class="game-buttons">
       <a
-        class="btn btn-secondary"
+        class="btn"
         data-toggle="collapse"
         [attr.href]="'#collapse' + project.id"
         [attr.aria-controls]="'collapse' + project.id"
         >View screenshots</a
       >
       <a
-        class="btn btn-dark"
+        class="btn btn-secondary"
         [attr.href]="project.url"
         data-toggle="tooltip"
         title="Visit page"
@@ -44,7 +44,6 @@
   </a>
   <div class="collapse" [attr.id]="'collapse' + project.id">
     <div class="card card-body">
-      <!-- SCREENSHOTS -->
       <div class="screenshots">
         @for (s of project.screenshots; track $index) {
         <a data-toggle="tooltip" title="View screenshot" target="_blank" [href]="s">
