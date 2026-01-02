@@ -25,3 +25,8 @@ div.projects {
 select {
     margin-bottom: 0;
 }
+
+select {
+    min-width: 50px;
+    max-width: 100px;
+}
