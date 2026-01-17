@@ -14,7 +14,7 @@
       </h5>
     </div>
     <p>
-      {{ project.description }}
+      {{ currentTranslation === "English" ? project.description : project.descriptionJp }}
     </p>
     <div class="game-buttons">
       <a
@@ -22,7 +22,7 @@
         data-toggle="collapse"
         [attr.href]="'#collapse' + project.id"
         [attr.aria-controls]="'collapse' + project.id"
-        >View screenshots</a
+        >{{ currentTranslation === "English" ? 'View screenshots' : 'スクリーンショットを見る' }}</a
       >
       <a
         class="btn btn-secondary"
@@ -30,7 +30,7 @@
         data-toggle="tooltip"
         title="Visit page"
         target="_blank"
-        >Play Game</a
+        >{{ currentTranslation === "English" ? 'Play Game' : 'ゲームをする' }}</a
       >
     </div>
   </div>

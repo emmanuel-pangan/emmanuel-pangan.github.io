@@ -2,12 +2,13 @@
   <div class="projects">
     <h3 class="text-dark">Projects</h3>
     <div class="sort">
-      <select class="form-control w-auto" #sortMethod (change)="sortProjectsBy(sortMethod.value)">
-        <option value="">Sort by Default</option>
-        <option value="Alphabetical (Ascending)">Alphabetical (Ascending)</option>
-        <option value="Alphabetical (Descending)">Alphabetical (Descending)</option>
-        <option value="Published Date (Ascending)">Published Date (Ascending)</option>
-        <option value="Published Date (Descending)">Published Date (Descending)</option>
+      <label for="select" style="margin-top: 0.5rem; margin-right: 0.25rem;">Sort</label>
+      <select name="select" class="form-control w-auto" #sortMethod (change)="sortProjectsBy(sortMethod.value)">
+        <option value="">Default</option>
+        <option value="Alphabetical (Ascending)">Title ▲</option>
+        <option value="Alphabetical (Descending)">Title ▼</option>
+        <option value="Published Date (Ascending)">Date ▲</option>
+        <option value="Published Date (Descending)">Date ▼</option>
       </select>
     </div>
   </div>
