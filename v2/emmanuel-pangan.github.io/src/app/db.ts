@@ -18,13 +18,13 @@ export interface Header {
 export const HEADER_ENG: Header = {
   name: "Emmanuel Pangan",
   shortDescription: "Indie Game Developer from the Philippines.",
-  longerDescription: "I’m an indie game developer from the Philippines who loves creating cute pixel-art games with Unity and C#. And in my free time, I like to practice and study Japanese, currently at JLPT N4 level.",
+  longerDescription: "I’m an indie game developer from the Philippines who loves creating cute pixel-art games with Unity and C#. And in my free time, I like to practice and study Japanese, currently at JLPT N3 level.",
 };
 
 export const HEADER_JP: Header = {
   name: "エマニュエル パンガン",
   shortDescription: "フィリピンのインディゲームクリエイター",
-  longerDescription: "私はUnityとC＃でドットゲームを作るが好きフィリピンのインディゲームディクリエイター。自由時間に日本語を勉強していることが好き。",
+  longerDescription: "私はUnityとC＃でドットゲームを作るが好きフィリピンのインディゲームディクリエイター。自由時間に日本語を勉強していることが好き。今はN3レベル。",
 };
 
 export const PROJECTS: Project[] = [
