@@ -1,10 +1,11 @@
 import { Component, Input } from '@angular/core';
 import { Project } from '../../db';
 import { TranslationService } from '../../translation.service';
+import { DatePipe } from '@angular/common';
 
 @Component({
   selector: 'app-card',
-  imports: [],
+  imports: [DatePipe],
   templateUrl: './card.html',
   styleUrl: './card.css',
 })

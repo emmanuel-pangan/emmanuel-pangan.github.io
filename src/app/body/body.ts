@@ -13,7 +13,7 @@ export class Body implements OnInit {
   protected filteredProjects: Project[] = PROJECTS;
 
   ngOnInit(): void {
-    this.sortProjectsBy('');
+    this.sortProjectsBy('Published Date (Ascending)');
   }
 
   protected sortProjectsBy(sortMethod: string) {

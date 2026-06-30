@@ -13,6 +13,7 @@
         </a>
       </h5>
     </div>
+    <small>Published Date: {{ project.publishedDate | date: 'MM/dd/yyyy' }}</small>
     <p>
       {{ currentTranslation === "English" ? project.description : project.descriptionJp }}
     </p>

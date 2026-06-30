@@ -23,7 +23,8 @@ a,
 button,
 label,
 select,
-option
+option,
+small
  {
     font-family: "Noto Sans", sans-serif;
     font-optical-sizing: auto;
