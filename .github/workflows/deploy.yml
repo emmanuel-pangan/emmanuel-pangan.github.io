@@ -3,7 +3,7 @@ name: Deploy Angular to GitHub Pages
 on:
   push:
     branches:
-      - main # Or master, depending on your default branch
+      - main
 
 permissions:
   contents: read
@@ -27,15 +27,15 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '22' # Uses the recommended LTS Node version for modern Angular
+          node-version: '22'
           cache: 'npm'
 
       - name: Install dependencies
         run: npm ci
 
       - name: Build Angular Application
-        # Replace YOUR_REPOSITORY_NAME with your exact repository name (keep the slashes!)
-        run: npm run build -- --base-href=/emmanuel-pangan.github.io/
+        # Change: Set the base-href to a single slash for root domain deployment
+        run: npm run build -- --base-href=/
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
@@ -43,8 +43,9 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # In Angular v20, the production build output lands in the /browser folder.
-          # Replace YOUR_REPOSITORY_NAME with your exact repository name.
+          # Change: Ensure this folder matches the project name inside your local angular.json or dist folder.
+          # If your angular.json project name is 'emmanuel-pangan.github.io', keep it as below.
+          # If it builds directly to './dist/browser', change this path to "./dist/browser"
           path: "./dist/emmanuel-pangan.github.io/browser"
 
       - name: Deploy to GitHub Pages
