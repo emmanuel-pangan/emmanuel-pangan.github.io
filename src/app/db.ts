@@ -80,7 +80,7 @@ export const PROJECTS: Project[] = [
     id: '4',
     title: 'King and Queen 2',
     url: 'https://emmanuel-pangan.itch.io/king-and-queen-2',
-    description: 'The royal couple are back again in their romantic adventure! Solve 25 new brain-teasing puzzles and help them reunite in love and happiness. Game won the 3rd Place of Unity & Sentry: Creators Showcase 2025.',
+    description: 'The royal couple are back again in their romantic adventure! Solve 25 new brain-teasing puzzles and help them reunite in love and happiness. It won the 3rd Place of Unity & Sentry: Creators Showcase 2025.',
     descriptionJp: 'ロイヤルカップルが再びロマンチックな冒険に！25の新しいパズルを解き明かし、愛と幸せを取り戻せるようお手伝いしましょう。このゲームはUnity & Sentry: Creators Showcase 2025で3位を獲得しました。',
     banner: "img-card/king-and-queen-2-card.png",
     screenshots: [
