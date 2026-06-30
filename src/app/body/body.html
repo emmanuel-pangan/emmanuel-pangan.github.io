@@ -1,0 +1,22 @@
+<main>
+  <div class="projects">
+    <h3 class="text-dark">Games</h3>
+    <div class="sort">
+      <label for="select" style="margin-top: 0.5rem; margin-right: 0.25rem;">Sort</label>
+      <select name="select" class="form-control w-auto" #sortMethod (change)="sortProjectsBy(sortMethod.value)">
+        <option value="">Default</option>
+        <option value="Alphabetical (Ascending)">Title ▲</option>
+        <option value="Alphabetical (Descending)">Title ▼</option>
+        <option value="Published Date (Ascending)">Date ▲</option>
+        <option value="Published Date (Descending)">Date ▼</option>
+      </select>
+    </div>
+  </div>
+  <ul>
+    @for (p of projects; track $index) {
+    <li>
+      <app-card [project]="p"></app-card>
+    </li>
+    }
+  </ul>
+</main>

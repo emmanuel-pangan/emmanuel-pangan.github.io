@@ -1,0 +1,64 @@
+<header>
+  <h1>{{ currentTranslation === 'English' ? header_eng.name : header_jp.name }}</h1>
+  <p>{{ currentTranslation === 'English' ? header_eng.shortDescription : header_jp.shortDescription }}</p>
+  <ul>
+    <li>
+      <a
+        class="text-dark"
+        data-toggle="collapse"
+        href="#aboutCollapse"
+        aria-controls="aboutCollapse"
+        >About</a
+      >
+    </li>
+    <li>|</li>
+    <li>
+      <a class="text-dark" href="mailto:emmanuelpanganwork@gmail.com" target="_blank">Email</a>
+    </li>
+    <li>|</li>
+    <li>
+      <a class="text-dark" href="https://www.linkedin.com/in/emmanuel-pangan/" target="_blank"
+        >LinkedIn</a
+      >
+    </li>
+    <li>|</li>
+    <li>
+      <a class="text-dark" href="https://emmanuel-pangan.itch.io/" target="_blank">Games</a>
+    </li>
+    <li>|</li>
+    <li>
+      <a class="text-dark" (click)="switchTranslation()" style="cursor: pointer;">{{ currentTranslation === 'English' ? '日本語' : 'English' }}</a>
+    </li>
+  </ul>
+
+  <div class="collapse" id="aboutCollapse">
+    <p class="text-left">
+       {{ currentTranslation === 'English' ? header_eng.longerDescription : header_jp.longerDescription }}
+      </p>
+    <div class=" mb-0">
+      <div style="margin-bottom: 3%; display: flex; justify-content: center; margin-top: 1rem;">
+        <iframe
+          width="50%"
+          height="360"
+          src="https://www.youtube-nocookie.com/embed/hgrFgw8OGXE?si=-pTS6sUsgQZX_QKY"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+    <div class="d-flex justify-content-end">
+      <a
+        onclick="showJumboReadMore()"
+        id="#closeButton"
+        data-toggle="collapse"
+        href="#aboutCollapse"
+        aria-controls="aboutCollapse"
+        class="text-muted mr-2"
+        >Close</a
+      >
+    </div>
+  </div>
+</header>

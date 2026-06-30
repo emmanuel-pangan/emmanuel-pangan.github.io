@@ -1,0 +1,32 @@
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+li {
+    margin-top: 1rem;
+}
+
+div.sort {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+div.projects {
+    margin-bottom: 1rem;
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 1rem;
+}
+
+select {
+    margin-bottom: 0;
+}
+
+select {
+    min-width: 50px;
+    max-width: 100px;
+}

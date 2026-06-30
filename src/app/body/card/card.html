@@ -1,0 +1,56 @@
+<div class="card rounded-0 mb-5">
+  <div class="card-body">
+    <div class="card-contents">
+      <h5 class="card-title">
+        <a
+          class="text-dark"
+          data-toggle="tooltip"
+          title="Visit page"
+          target="_blank"
+          [href]="project.url"
+        >
+          {{ project.title }}
+        </a>
+      </h5>
+    </div>
+    <p>
+      {{ currentTranslation === "English" ? project.description : project.descriptionJp }}
+    </p>
+    <div class="game-buttons">
+      <a
+        class="btn"
+        data-toggle="collapse"
+        [attr.href]="'#collapse' + project.id"
+        [attr.aria-controls]="'collapse' + project.id"
+        >{{ currentTranslation === "English" ? 'View screenshots' : 'スクリーンショットを見る' }}</a
+      >
+      <a
+        class="btn btn-secondary"
+        [attr.href]="project.url"
+        data-toggle="tooltip"
+        title="Visit page"
+        target="_blank"
+        >{{ currentTranslation === "English" ? 'Play Game' : 'ゲームをする' }}</a
+      >
+    </div>
+  </div>
+  <a
+    data-toggle="tooltip"
+    title="Visit page"
+    [href]="project.url"
+    target="_blank"
+  >
+    <img class="card-img-bottom rounded-0" [alt]="project.title" [src]="project.banner" />
+  </a>
+  <div class="collapse" [attr.id]="'collapse' + project.id">
+    <div class="card card-body">
+      <div class="screenshots">
+        @for (s of project.screenshots; track $index) {
+        <a data-toggle="tooltip" title="View screenshot" target="_blank" [href]="s">
+          <img class="my-1" style="height: 128px; width: auto" [alt]="project.title" [src]="s" />
+        </a>
+        }
+      </div>
+    </div>
+  </div>
+</div>
