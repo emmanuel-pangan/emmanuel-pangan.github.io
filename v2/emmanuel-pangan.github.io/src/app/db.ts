@@ -16,15 +16,17 @@ export interface Header {
 }
 
 export const HEADER_ENG: Header = {
-  name: "Emmanuel Pangan",
-  shortDescription: "Indie Game Developer from the Philippines.",
-  longerDescription: "I’m an indie game developer from the Philippines who loves creating cute pixel-art games with Unity and C#. And in my free time, I like to practice and study Japanese, currently at JLPT N3 level.",
+  name: 'Emmanuel Pangan',
+  shortDescription: 'Indie Game Developer from the Philippines.',
+  longerDescription:
+    'I’m an indie game developer from the Philippines who loves creating cute pixel-art games with Unity and C#. And in my free time, I like to practice and study Japanese, currently at JLPT N3 level.',
 };
 
 export const HEADER_JP: Header = {
-  name: "エマニュエル パンガン",
-  shortDescription: "フィリピンのインディゲームクリエイター",
-  longerDescription: "私はUnityとC＃でドットゲームを作るが好きフィリピンのインディゲームディクリエイター。自由時間に日本語を勉強していることが好き。今はN3レベル。",
+  name: 'エマニュエル パンガン',
+  shortDescription: 'フィリピンのインディゲームクリエイター',
+  longerDescription:
+    '私はUnityとC＃でドットゲームを作るが好きフィリピンのインディゲームディクリエイター。自由時間に日本語を勉強していることが好き。今はN3レベル。',
 };
 
 export const PROJECTS: Project[] = [
@@ -34,7 +36,7 @@ export const PROJECTS: Project[] = [
     url: 'https://emmanuel-pangan.itch.io/the-thief',
     description: 'Sneak stealthily into a dungeon filled with hidden and fake traps as the thief.',
     descriptionJp: '隠された偽の罠がいっぱいのダンジョンに泥棒としてこっそりと潜入しましょう。',
-    banner: "img-card/the-thief-card.png",
+    banner: 'img-card/the-thief-card.png',
     screenshots: [
       'https://img.itch.zone/aW1hZ2UvNTM1NDEwLzcwMDk3OTIucG5n/original/meDVc3.png',
       'https://img.itch.zone/aW1hZ2UvNTM1NDEwLzcwMDk3OTUucG5n/original/waLjuT.png',
@@ -48,8 +50,10 @@ export const PROJECTS: Project[] = [
     id: '2',
     title: 'King and Queen',
     url: 'https://emmanuel-pangan.itch.io/king-and-queen',
-    description: 'Guide King and Queen be reunited through clever puzzles across every level and unlock their heartwarming love story.',
-    descriptionJp: 'あらゆるレベルの巧妙なパズルを解いて王と女王が再会し、心温まるラブストーリーを解き明かしましょう',
+    description:
+      'Guide King and Queen be reunited through clever puzzles across every level and unlock their heartwarming love story.',
+    descriptionJp:
+      'あらゆるレベルの巧妙なパズルを解いて王と女王が再会し、心温まるラブストーリーを解き明かしましょう',
     banner: 'img-card/king-and-queen-card.png',
     screenshots: [
       'https://img.itch.zone/aW1hZ2UvNzQ4NzUxLzY3MzQyMjUucG5n/original/Us%2FILW.png',
@@ -64,9 +68,11 @@ export const PROJECTS: Project[] = [
     id: '3',
     title: 'Yggdrasil',
     url: 'https://emmanuel-pangan.itch.io/yggdrasil',
-    description: 'Venture from the roots of Yggdrasil and slay the beast Cartaphilus, the Gravedigger, which dwells beneath the church.',
-    descriptionJp: 'ユグドラシルの根源から冒険し、教会の下に住む獣、墓掘り人カルタフィルスを倒してください。',
-    banner: "img-card/yggdrasil-card.png",
+    description:
+      'Venture from the roots of Yggdrasil and slay the beast Cartaphilus, the Gravedigger, which dwells beneath the church.',
+    descriptionJp:
+      'ユグドラシルの根源から冒険し、教会の下に住む獣、墓掘り人カルタフィルスを倒してください。',
+    banner: 'img-card/yggdrasil-card.png',
     screenshots: [
       'https://img.itch.zone/aW1hZ2UvMTI1MTc2NS85MzkyMjkyLnBuZw==/original/qDLlPO.png',
       'https://img.itch.zone/aW1hZ2UvMTI1MTc2NS85MzkyMjkzLnBuZw==/original/mN%2FIUA.png',
@@ -80,9 +86,11 @@ export const PROJECTS: Project[] = [
     id: '4',
     title: 'King and Queen 2',
     url: 'https://emmanuel-pangan.itch.io/king-and-queen-2',
-    description: 'The royal couple are back again in their romantic adventure! Solve 25 new brain-teasing puzzles and help them reunite in love and happiness. Game won the 3rd Place of Unity & Sentry: Creators Showcase 2025.',
-    descriptionJp: 'ロイヤルカップルが再びロマンチックな冒険に！25の新しいパズルを解き明かし、愛と幸せを取り戻せるようお手伝いしましょう。このゲームはUnity & Sentry: Creators Showcase 2025で3位を獲得しました。',
-    banner: "img-card/king-and-queen-2-card.png",
+    description:
+      'The royal couple returns for another romantic adventure in this award-winning puzzle platformer!',
+    descriptionJp:
+      '受賞歴のあるパズルプラットフォーマーで、ロイヤルカップルが再びロマンチックアドベンチャーへ！',
+    banner: 'img-card/king-and-queen-2-card.png',
     screenshots: [
       'https://img.itch.zone/aW1hZ2UvMzA4MjcyOS8yMjczNTA0Ny5wbmc=/original/PSKHBs.png',
       'https://img.itch.zone/aW1hZ2UvMzA4MjcyOS8yMjczNTA1MC5wbmc=/original/mLWZwN.png',
@@ -91,5 +99,22 @@ export const PROJECTS: Project[] = [
       'https://img.itch.zone/aW1hZ2UvMzA4MjcyOS8yMjczNTA0OS5wbmc=/original/WtMeFn.png',
     ],
     publishedDate: 'August 15, 2025',
+  },
+  {
+    id: '5',
+    title: 'Bedtime Story: The Case of the Missing Cheese Popsicle',
+    url: 'https://armanlone-main.itch.io/the-missing-cheese',
+    description:
+      'A whack visual novel filled with funny animals for all children to enjoy. (This project is work-in-progress, the URL and screenshots is linked to the game jam version.)',
+    descriptionJp:
+      '受賞歴のあるパズルプラットフォーマーで、ロイヤルカップルが再びロマンチックアドベンチャーへ！',
+    banner: 'img-card/bedtime-story-the-case-of-missing-cheese-popsicle-card.png',
+    screenshots: [
+      'https://img.itch.zone/aW1hZ2UvMTQ1NjMxMi84NTIzNTMyLnBuZw==/original/vuDssi.png',
+      'https://img.itch.zone/aW1hZ2UvMTQ1NjMxMi84NTQzODcxLnBuZw==/original/mEvplm.png',
+      'https://img.itch.zone/aW1hZ2UvMTQ1NjMxMi84NTQzODcwLnBuZw==/original/8fCs0i.png',
+      'https://img.itch.zone/aW1hZ2UvMTQ1NjMxMi84NTIzNDk2LnBuZw==/original/r6AH68.png',
+    ],
+    publishedDate: 'November 7, 2026',
   },
 ];
