@@ -9,3 +9,4 @@ The website takes inspiration on [carloswilkes.com](carloswilkes.com)
 - v2.1 - Jan 17 2026 - Added JP translations
 - v2.2 - Jun 27 2026 - Changed Projects to Games
 - v3 - Jun 30 2026 - Deleted old files and setup GitHub Actions for simple CI/CD of this repo
+- v4 - Nov 07 2026 - Added Bedtime Story: The Case of the Missing Cheese Popsicle files
